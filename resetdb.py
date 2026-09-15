@@ -14,8 +14,6 @@ def main():
         print(f"Nothing to reset. (Error: {e})")
         
     finally:
-        # The finally block ensures the connection ALWAYS closes, 
-        # even if an error happens above.
         if 'conn' in locals():
             conn.close()
 

@@ -19,10 +19,11 @@ def create_database ():
     #filepath is left unindexed to not waste cpu cycles running through it.
     conn.commit()
     return conn
-    
+
+
 def file_indexer(conn):
     cursor = conn.cursor()
-    target_directory = ""  #initial folder to start looking through and start indexing.
+    target_directory = "C:/Users/farid/Desktop/school stuff"  #initial folder to start looking through and start indexing.
     # Remember to delete above !!!
     try:
         cursor.execute('''
