@@ -23,7 +23,7 @@ def create_database ():
 
 def file_indexer(conn):
     cursor = conn.cursor()
-    target_directory = "C:/Users/farid/Desktop/school stuff"  #initial folder to start looking through and start indexing.
+    target_directory = ""  #initial folder to start looking through and start indexing.
     # Remember to delete above !!!
     try:
         cursor.execute('''
